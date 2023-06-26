@@ -1,6 +1,7 @@
 import Navigation from "./navigation";
 import './header.scss';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   
@@ -8,7 +9,12 @@ export default function Header() {
     <header className="header">
       <div className="wrapper">
         <Link href='/' className="header__logo">
-          <img src="/assets/images/Logo.svg" alt="logo" />
+          <Image 
+            src="/assets/images/Logo.svg" 
+            alt="logo"
+            width={100}
+            height={100}
+          />
           <h1>CryptoBit</h1>
         </Link>
         <Navigation />

@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import './search.scss';
 import Select from 'react-select'
 
@@ -28,7 +29,12 @@ export default function Search() {
       />
       <input className='search__input' type="search" name="search" placeholder='Enter your search here...' />
       <button className='search__button' type="submit">
-        <img className='search__button-icon' src="/assets/icons/Search.svg" alt="button search" />
+      <Image 
+        src="/assets/icons/Search.svg" 
+        alt="button search"
+        width={24}
+        height={24}
+      />
       </button>
     </div>
   )
