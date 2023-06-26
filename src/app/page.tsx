@@ -1,7 +1,13 @@
-'use client'
+import Banner from '@/components/banner/banner';
+import './home.scss';
 
 export default function Home() {
   return (
-    <h1>Home</h1>
+    <div className="page home">
+      <Banner />
+      <div className="wrapper">
+
+      </div>
+    </div>
   )
 }

@@ -1,0 +1,27 @@
+.search {
+  width: 700px;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 160px auto 55px;
+}
+
+.search__select {
+  color: $button-colors-black;
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: none;
+}
+
+.search__input {
+  padding: 17px;
+  background-color: $color-grey;
+  font-size: 14px;
+}
+
+.search__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $button-colors-black;
+  border-radius: 0 12px 12px 0;
+}
