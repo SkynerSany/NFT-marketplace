@@ -2,12 +2,14 @@ import Banner from '@/components/banner/banner';
 import './home.scss';
 import Block from '@/components/block/block';
 import { v1 } from 'uuid';
+import Card from '@/components/card/card';
+import CardList from '@/components/card-list/card-list';
 
 const blocks = [
   {
     titleFirst: 'Featured',
     titleLast: 'Items',
-    children: <></>
+    children: <CardList count={4} />
   },
   {
     titleFirst: 'Top',
@@ -17,7 +19,7 @@ const blocks = [
   {
     titleFirst: 'Newest',
     titleLast: 'Items',
-    children: <></>
+    children: <CardList count={12} />
   },
   {
     titleFirst: 'Featured',
