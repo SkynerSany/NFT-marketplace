@@ -34,6 +34,10 @@
   gap: 24px;
   font-size: 14px;
   font-weight: 700;
+
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 }
 
 .user {
@@ -96,27 +100,4 @@
   background: $button-colors-color;
   background-clip: text;
   color: transparent;
-}
-
-.user__icon-container {
-  height: 36px;
-  width: 36px;
-
-  border-radius: 50%;
-  border: 2px solid transparent;
-  background: linear-gradient(to right, white, white), $button-colors-color;
-  background-clip: padding-box, border-box;
-  -webkit-background-clip: padding-box, border-box;
-  -webkit-text-fill-color: transparent;
-  border-image: $button-colors-color;
-  border-image-slice: 1;
-}
-
-.user__icon {
-  height: 100%;
-  width: 100%;
-
-  background: url(/assets/images/user-icon.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }

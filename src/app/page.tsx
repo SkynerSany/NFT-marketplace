@@ -2,8 +2,9 @@ import Banner from '@/components/banner/banner';
 import './home.scss';
 import Block from '@/components/block/block';
 import { v1 } from 'uuid';
-import Card from '@/components/card/card';
+import Card from '@/components/card-list/card/card';
 import CardList from '@/components/card-list/card-list';
+import CreatorList from '@/components/creators-list/creator-list';
 
 const blocks = [
   {
@@ -14,7 +15,7 @@ const blocks = [
   {
     titleFirst: 'Top',
     titleLast: 'Creators',
-    children: <></>
+    children: <CreatorList count={6} />
   },
   {
     titleFirst: 'Newest',

@@ -1,4 +1,4 @@
-import Card from '../card/card';
+import Card from './card/card';
 import { ICardListProps } from './card-list.interfaces';
 import './card-list.scss';
 

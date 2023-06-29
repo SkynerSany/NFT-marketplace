@@ -1,0 +1,85 @@
+.creator-card {
+  width: 700px;
+  height: 130px;
+  border-radius: 24px;
+  border: 1px solid $color-dark-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .user__icon-container {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.creator-card__wrapper {
+  width: 93%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creator-card__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.creator-card__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.creator-card__user-name {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.creator-card__user-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.creator-card__created {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.creator-card__created-count {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.creator-card__created-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.creator-card__created-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.creator-card__card-container {
+  position: relative;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  border: 2px solid $color-dark-grey;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.creator-card__card-image {
+
+}

@@ -2,6 +2,7 @@ import Navigation from "./navigation";
 import './header.scss';
 import Link from "next/link";
 import Image from "next/image";
+import UserIcon from "../user-icon/user-icon";
 
 export default function Header() {
   
@@ -33,9 +34,7 @@ export default function Header() {
                 <span className="user__balance-currency">eth</span>
               </p>
             </div>
-            <Link href='/user' className="user__icon-container">
-              <div className="user__icon"></div>
-            </Link>
+            <UserIcon link="/user" image="/assets/images/user-icon.svg" />
           </div>
         </div>
       </div>

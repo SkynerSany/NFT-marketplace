@@ -1,0 +1,6 @@
+.creator-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 700px);
+  justify-content: center;
+  gap: 20px;
+}

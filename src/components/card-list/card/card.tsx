@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import './card.scss';
-import Button from '../button/button';
+import Button from '../../button/button';
+import UserIcon from '@/components/user-icon/user-icon';
 
 export default function Card() {
   return (
@@ -19,9 +20,7 @@ export default function Card() {
         <div className="card__info-text">
           <p className="card__name">Golden Man</p>
           <div className="card__author">
-            <Link href='/user' className="user__icon-container">
-              <div className="user__icon"></div>
-            </Link>
+          <UserIcon link="/user" image="/assets/images/user-icon.svg" />
             <p className="user__name">@illusion</p>
           </div>
         </div>
