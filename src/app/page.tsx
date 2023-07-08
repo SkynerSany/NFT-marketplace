@@ -2,30 +2,28 @@ import Banner from '@/components/banner/banner';
 import './home.scss';
 import Block from '@/components/block/block';
 import { v1 } from 'uuid';
-import Card from '@/components/card-list/card/card';
 import CardList from '@/components/card-list/card-list';
-import CreatorList from '@/components/creators-list/creator-list';
 
 const blocks = [
   {
     titleFirst: 'Featured',
     titleLast: 'Items',
-    children: <CardList count={4} />
+    children: <CardList count={4} size='small' type='items' />
   },
   {
     titleFirst: 'Top',
     titleLast: 'Creators',
-    children: <CreatorList count={6} />
+    children: <CardList count={6} size='large' type='top-creators' />
   },
   {
     titleFirst: 'Newest',
     titleLast: 'Items',
-    children: <CardList count={12} />
+    children: <CardList count={12} size='small' type='items' />
   },
   {
     titleFirst: 'Featured',
     titleLast: 'Creators',
-    children: <></>
+    children: <CardList count={2} size='large' type='featured-creators' />
   },
   {
     titleFirst: 'Crypto',
