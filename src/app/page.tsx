@@ -28,7 +28,7 @@ const blocks = [
   {
     titleFirst: 'Crypto',
     titleLast: 'News',
-    children: <></>
+    children: <CardList count={6} size='medium' type='news' />
   }
 ]
 

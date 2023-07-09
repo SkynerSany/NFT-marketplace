@@ -1,0 +1,17 @@
+.footer-banner-container {
+  position: relative;
+  height: 343px;
+  width: 100%;
+}
+
+.footer-banner {
+  object-fit: cover;
+}
+
+.footer {
+  height: 464px;
+  display: flex;
+  justify-content: center;
+  
+  background: $button-colors-black;
+}
