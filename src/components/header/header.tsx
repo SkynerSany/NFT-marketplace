@@ -9,14 +9,14 @@ export default function Header() {
   return (
     <header className="header">
       <div className="wrapper">
-        <Link href='/' className="header__logo">
+        <Link href='/' className="logo">
           <Image 
             src="/assets/images/Logo.svg" 
             alt="logo"
             width={100}
             height={100}
           />
-          <h1>CryptoBit</h1>
+          <span>CryptoBit</span>
         </Link>
         <Navigation />
         <div className="user">
