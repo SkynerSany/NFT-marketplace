@@ -45,3 +45,22 @@ input {
   align-items: center;
 }
 
+.block__title {
+  display: flex;
+  gap: 12px;
+
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 63px;
+
+  span {
+    color: $button-colors-black;
+
+    &:first-child {
+      background: $button-colors-color;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+.explore {
+
+    .wrapper {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.explore__card-list {
+    width: 100%;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
