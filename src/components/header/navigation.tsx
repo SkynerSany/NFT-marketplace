@@ -32,7 +32,7 @@ const NAV_LINKS = [
 ]
 
 export default function Navigation() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <nav className="navigation">
