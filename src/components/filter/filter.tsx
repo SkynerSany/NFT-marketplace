@@ -29,16 +29,16 @@ export default function Filter() {
   return (
     <section className="filter">
       <h3 className="filter__title">Filter</h3>
-      <div className="filter__list">
+      <ul className="filter__list">
         {
           FILTER_LIST.map(({ name, inputsList }) => (
             <li className="filter__type">
               <p>{name}</p>
-              <InputsContainer inputs={inputsList} />
+              <InputsContainer inputs={inputsList} className='filter__name-list'/>
             </li>
           ))
         }
-      </div>
+      </ul>
     </section>
   );
 }

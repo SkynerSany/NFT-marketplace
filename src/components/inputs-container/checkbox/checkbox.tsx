@@ -13,6 +13,7 @@ export default function Checkbox({ label, name }: ICheckbox) {
         type="checkbox"
         className='checkbox__input'
         name={name}
+        value={label}
         onChange={() => {
           setIsChecked(!isChecked);
         }}

@@ -1,5 +1,6 @@
 export interface IInputsContainerProps {
-    inputs: IInput
+    inputs: IInput,
+    className: string
 }
 
 export interface IInput {
